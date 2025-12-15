@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "nLula",
-    "description": "A Chrome extension which replaces all images on all pages to Luiz Inácio Lula da Silva.",
+    "name": "nBolsonaro",
+    "description": "A Chrome extension which replaces all images on all pages to Jair Messias Bolsonaro.",
     "version": "1.1",
     "icons": {
         "128": "icon128.png",
@@ -10,20 +10,13 @@
     "content_scripts": [
 		{
 			"matches": ["*://*/*"],
-			"js": ["nlula.js"],
+			"js": ["nbolsonaro.js"],
 			"run_at": "document_end"
 		}
 	],
-    "host_permissions": ["*://*/*"],
     "permissions": ["storage"],
     "options_ui": {
         "page": "options.html",
         "open_in_tab": false
-    },
-    "web_accessible_resources": [
-		{
-			"resources": ["logo/logo.png"],
-			"matches": ["*://*/*"]
-		}
-	]
+    }
 }

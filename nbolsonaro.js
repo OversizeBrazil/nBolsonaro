@@ -1,37 +1,41 @@
 (function () {
-  //nLula
+  //nBolsonaro
   var self = {
-    nLulaImgs: [
-      "https://www.camara.leg.br/internet/deputado/bandep/139289.jpgmaior.jpg",
-      "https://s2-oglobo.glbimg.com/XDXqG739NzDGVH0XG2z-gW-DLRc=/0x36:334x585/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/S/t/DHWvRyT4mP2Vfwab5LUQ/michelle.png",
-      "https://i.abcnewsfe.com/a/26b28a01-30f1-400e-9eec-5420f85e81e4/lula-da-silva-03-gty-jt-221101_1667326187412_hpEmbed_1x1.jpg",
-      "https://www.tvparaguacu.com.br/uploads/noticias/9236330102022200434.jpeg",
-      "https://www.infomoney.com.br/wp-content/uploads/2025/10/2025-10-08T204434Z_840036570_RC2V7HAULNY0_RTRMADP_3_BRAZIL-POLITICS.jpg",
-      "https://imagens.ebc.com.br/xgcLIMWKmr1-wPH4-E5xYRJYT7M=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/02/19/cimeira-brasil-portugal_mcamgo_abr_19022025-13.jpg",
-      "https://s2-g1.glbimg.com/8RIXcNHy5TmCEMinzjgY9nMObz8=/0x0:4200x2800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/M/k/LughgKR7iLukBYKpoLjA/fta20221012449.jpg",
-      "https://www.gp1.com.br/media/image_bank/2025/1/luiz-inacio-lula-da-silva-presidente-da-republicanone.jpg.1200x0_q95_crop.webp",
-      "https://www.gazetadigital.com.br/uploads/webdisco/2015/10/05/jpg/588x441/67e7b632d101aa07cae508f0edf2aea0.jpg",
-      "https://i.pinimg.com/736x/6a/3e/59/6a3e5969ba5f7a0e06dcfc81c2a96c62.jpg",
-      "https://i.pinimg.com/564x/6d/9f/d9/6d9fd959e35cfe5afadcee2d11722448.jpg",
-      "https://static.poder360.com.br/2022/05/Lula-848x477.jpeg",
-      "https://platobr.com.br/wp-content/uploads/2025/12/54976007733-cae59bb2c2-o-990x557.jpg.webp?x34876",
-      "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJkdTA0cmN5d3JiY3Nrd29ramloemliNDBsdWtuZno3ZHZuZHQ0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tOJCssEXXsYlkIC0v8/giphy.gif",
-      "https://imagens.ebc.com.br/UelDcSzFgpB01kns-2WJVOXSWxM=/1024x768/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/06/03/03062025-pzzb2013.jpg",
-      "https://assets.brasildefato.com.br/2025/01/image_processing20241230-3367037-9b6xrv.webp",
-      "https://www.infomoney.com.br/wp-content/uploads/2024/10/2024-10-06T142043Z_1_LYNXMPEK95052_RTROPTP_4_BRAZIL-GAMBLING.jpg",
-      "https://assets.brasildefato.com.br/2025/12/03062025-pzzb2009.webp",
-      "https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2025/08/1754430745.jpg",
-      "https://www.colegioweb.com.br/wp-content/uploads/2013/12/Luiz-Inacio-Lula-da-Silva.jpg",
-      "https://www.reinodegaston.com/wp-content/uploads/2022/11/97880950_Brazilian-former-President-2003-2011-Luiz-Inacio-Lula-da-Silva-gestures-as-he-speaks-du.jpg",
-      "https://lula.com.br/wp-content/uploads/2022/10/209b9246-FIGURINHA-8.gif",
-      "https://lula.com.br/wp-content/uploads/2022/10/593c5e2f-FIGURINHA-6.gif",
-      "https://lula.com.br/wp-content/uploads/2021/10/EDITADAS_0017_25.jpg",
-      "https://conteudo.imguol.com.br/c/entretenimento/73/2023/04/28/sao-bernardo-do-campo-sp-01051986luiz-inacio-lula-da-silva-discursa-para-trabalhadores-no-1-de-maio-dia-do-trabalhador-em-sao-bernardo-do-campo-sp-1682707699459_v2_4x3.jpg",
-      "https://f.i.uol.com.br/folha/mundo/images/1701926.jpeg",
+    nBolsonaroImgs: [
+      "https://www.cartacapital.com.br/wp-content/uploads/2021/01/Bolsonaro-Impeachment-1.jpg",
+      "https://imagenes.elpais.com/resizer/v2/H3AY7RTIIUQWF4X7BMMUDK4SBY.jpg?auth=34917644bf0f696fcb4d07929be883a779f7be4f0949b249b88ddd0f4bea5ade&width=414",
+      "https://imagens.ebc.com.br/_bY4DYdwYKEJoPgTc-PZ3K2xzPA=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/pronunciamento_do_presidente_jair_bolsonaro20200907_0550.jpg",
+      "https://nexo-uploads-beta.s3.amazonaws.com/wp-content/uploads/2023/11/29124036/2022-05-26-POLITICA-BOLSONARO-ITAMARATY-BIDEN_binary_290348-scaled.jpg",
+      "https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2021/08/202108Americas_Brazil_bolsonaro_block.jpg",
+      "https://imagenes.elpais.com/resizer/v2/7XAYMNZ56VHQ3EP3L6LVO6CL7M.jpg?auth=96bb3ec224478c859117cebcd701c8ec805e9204abc77efdb2c65df7898a0b08&width=414",
+      
+      "https://www.cartacapital.com.br/wp-content/uploads/2025/09/54409368261_d52d9bcef5_k-1024x683.jpg",
+      "https://f.i.uol.com.br/fotografia/2018/10/28/15407768675bd663a363789_1540776867_3x2_md.jpg",
+
+      "https://www.plural.jor.br/wp-content/uploads/2019/03/bolsonaro-jovem-ed-1.jpg?wpId=18200",
+      "https://uploads.metroimg.com/wp-content/uploads/2021/12/17174636/bolsonaro-michael.jpg",
+
+      "https://www.moneytimes.com.br/uploads/2018/10/bolsonaro-amor.jpg",
+      "https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/11/bolsonaro-9-1200x675.jpg",
+
+      "https://img1.migalhas.uol.com.br/gf_base/empresas/MIGA/imagens/9B17DB3B675E7C5806B43E1FDD9ADE251697_bolsonaro.jpg",
+      "https://linkezine.com.br/wp-content/uploads/2025/08/bolsonaro.gif",
+      "https://static.poder360.com.br/2019/03/bolsonaro-no-datena.gif",
+      "https://static.poder360.com.br/2020/11/bolsonaro-twitter-meme-18-nov.gif",
+      "https://www.estadao.com.br/resizer/v2/https%3A%2F%2Fd32dgtrnmhd45e.cloudfront.net%2F08-05-2025%2Ft_fe3a255d68e240b7beb7ab424c760296_name_file_960x540_1600_v4_.jpg?quality=80&auth=46e5ce870235145042da96b2b2708b1ad7d717c0f02fae072b918d0f8b78eaff&width=520&height=292&smart=true",
+      "https://images.vrt.be/vrtnws_web/2023/01/09/ec9b3a9c-902c-11ed-b07d-02b7b76bf47f.jpg?width=900&height=506",
+      "https://images.jota.info/wp-content/uploads/2025/08/jair-bolsonaro-exame-moraes.jpg",
+      "https://storage.googleapis.com/br_mynews_site/2025/06/6af3557b-54578021126_04944129cd_k.jpg",
+      "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20250621_AMP002.jpg",
+      "https://istoedinheiro.com.br/wp-content/uploads/sites/17/Reuters_Direct_Media/BrazilOnlineReportTopNews/tagreuters.com2023binary_LYNXMPEJ03098-BASEIMAGE.jpg",
+      "https://midias.correio24horas.com.br/2025/07/24/jair-bolsonaro-chora-em-igreja-2828783-article.webp",
+      "https://pbs.twimg.com/media/DqoLq_ZX0AABSAm.jpg",
+      "https://i.ytimg.com/vi/6sow6kb_2Hk/maxresdefault.jpg",
+      "https://classic.exame.com/wp-content/uploads/2019/03/bolsonaro.gif",
     ],
     // Helper to get random image
     getRandomImage: function() {
-      return self.nLulaImgs[Math.floor(Math.random() * self.nLulaImgs.length)];
+      return self.nBolsonaroImgs[Math.floor(Math.random() * self.nBolsonaroImgs.length)];
     },
 
     shouldReplace: function() {
@@ -40,7 +44,7 @@
 
     replaceImage: function (item) {
       //Skip if image is already replaced
-      if (self.nLulaImgs.includes(item.src)) return;
+      if (self.nBolsonaroImgs.includes(item.src)) return;
 
       // Check probability
       if (!self.shouldReplace()) return;
@@ -57,11 +61,11 @@
       } else {
         //Replace when loaded
         //Avoid adding multiple listeners
-        if (!item.dataset.nlulaListening) {
-            item.dataset.nlulaListening = "true";
+        if (!item.dataset.nBolsonaroListening) {
+            item.dataset.nBolsonaroListening = "true";
             item.addEventListener("load", function () {
               //Check again
-              if (self.nLulaImgs.includes(item.src)) return;
+              if (self.nBolsonaroImgs.includes(item.src)) return;
               
               // Check probability again for late loaded images? 
               // Maybe not, to be consistent. But let's keep it simple.
@@ -145,7 +149,7 @@
         // Add custom images if any
         if (items.customImages) {
           var customList = items.customImages.split('\n').map(function(s) { return s.trim(); }).filter(function(s) { return s.length > 0; });
-          self.nLulaImgs = self.nLulaImgs.concat(customList);
+          self.nBolsonaroImgs = self.nBolsonaroImgs.concat(customList);
         }
 
         //Initial replace
