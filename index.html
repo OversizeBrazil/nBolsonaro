@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nBolsonaro - Brasil acima de tudo, memes acima de todos</title>
+    <meta
+      name="description"
+      content="Substitua todas as imagens da web por fotos do Bolsonaro. Uma extensão divertida para Chrome e Firefox."
+    />
+    <link rel="icon" type="image/png" href="icon48.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #009C3B;
+        --primary-dark: #009440;
+        --text: #1f2937;
+        --text-light: #6b7280;
+        --bg: #f9fafb;
+        --card-bg: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, var(--primary) 0%, #FFDF00 100%);
+        color: #302681;
+        padding: 4rem 1rem 6rem;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 6px solid rgba(255, 255, 255, 0.3);
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        margin-bottom: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .logo-img:hover {
+        transform: scale(1.05) rotate(5deg);
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0 0 1rem;
+        letter-spacing: -0.02em;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+        opacity: 0.95;
+        margin-bottom: 0;
+        font-weight: 400;
+        max-width: 600px;
+      }
+
+      main {
+        flex: 1;
+        max-width: 900px;
+        margin: -4rem auto 2rem;
+        padding: 0 1rem;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .card {
+        background: var(--card-bg);
+        border-radius: 16px;
+        padding: 3rem 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      .description {
+        font-size: 1.125rem;
+        color: var(--text-light);
+        margin-bottom: 2.5rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .preview-container {
+        margin: 2rem 0;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        display: inline-block;
+      }
+
+      .preview-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .cta-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 32px;
+        color: white;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        min-width: 200px;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn:active {
+        transform: translateY(-1px);
+      }
+
+      .btn-chrome {
+        background-color: #302681;
+      }
+      .btn-chrome:hover {
+        background-color: #3367d6;
+      }
+
+      .btn-firefox {
+        background-color: #ff7139;
+      }
+      .btn-firefox:hover {
+        background-color: #e65b2a;
+      }
+
+      .btn svg {
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 4rem;
+        text-align: left;
+      }
+
+      .feature-item h3 {
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        color: var(--text-light);
+        font-size: 0.875rem;
+        border-top: 1px solid #e5e7eb;
+        margin-top: 2rem;
+      }
+
+      footer a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 2.25rem;
+        }
+        .hero {
+          padding-bottom: 5rem;
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        .card {
+          padding: 2rem 1.5rem;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-content">
+        <img src="icon128.png" alt="nBolsonaro Logo" class="logo-img" />
+        <h1>nBolsonaro</h1>
+        <p class="tagline">
+          Transforme sua navegação com um toque de esperança.
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <div class="card">
+        <p class="description">
+          A extensão que substitui <strong>todas as imagens</strong> de todos os
+          sites por fotos do <strong>Jair Messias Bolsonaro</strong>. Espalhe
+          o amor e a alegria pela internet.
+        </p>
+
+        <div class="preview-container">
+          <img
+            src="https://lh3.googleusercontent.com/spainO4oOU4OZXyP-6w0fSEjqPCYqjW7e5i-tY4wDV-_CI5ZP-jUjTj2V8AZURSPFhQMuLZKOmWJ7uMwoPpXfGJv1g=s1280-w1280-h800"
+            alt="Preview"
+            class="preview-img"
+          />
+        </div>
+
+        <div class="cta-section">
+          <a
+            href="https://chromewebstore.google.com/detail/nbolsonaro/jcfnjghllnbbhidodeakjmodgpefhben"
+            class="btn btn-chrome"
+            target="_blank"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 19.5c-4.142 0-7.5-3.358-7.5-7.5S7.858 4.5 12 4.5s7.5 3.358 7.5 7.5-3.358 7.5-7.5 7.5z"
+              />
+              <path
+                d="M12 6.75c-2.9 0-5.25 2.35-5.25 5.25S9.1 17.25 12 17.25 17.25 14.9 17.25 12 14.9 6.75 12 6.75zm0 8.25c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"
+              />
+            </svg>
+            Adicionar ao Chrome
+          </a>
+          <a
+            href="https://addons.mozilla.org/pt-BR/firefox/addon/nbolsonaro/"
+            class="btn btn-firefox"
+            target="_blank"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+              />
+            </svg>
+            Adicionar ao Firefox
+          </a>
+        </div>
+
+        <div class="features">
+          <div class="feature-item">
+            <h3>✨ Simples e Leve</h3>
+            <p>
+              Instale e pronto. Não pesa no navegador e funciona em qualquer
+              site.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>❤️ Feito com Amor</h3>
+            <p>
+              Código aberto e desenvolvido pela comunidade para a comunidade.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>⚙️ Configurável</h3>
+            <p>
+              Escolha a probabilidade de substituição e adicione suas próprias
+              imagens.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 nBolsonaro. Código aberto no
+        <a href="https://github.com/OversizeBrazil/nBolsonaro" target="_blank"
+          >GitHub</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>

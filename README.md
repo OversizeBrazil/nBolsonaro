@@ -8,3 +8,11 @@ A Chrome and Firefox extension which replaces all images on all pages to Jair Me
 
 * Chrome: https://chromewebstore.google.com/detail/nbolsonaro/jcfnjghllnbbhidodeakjmodgpefhben
 * Firefox: https://addons.mozilla.org/pt-BR/firefox/addon/nbolsonaro/
+
+## Features
+* Replace all images on all pages to Jair Messias Bolsonaro.
+* Works on all websites.
+* Easy to use, just install and enjoy.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
