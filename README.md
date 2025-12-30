@@ -1,10 +1,10 @@
 # nBolsonaro
-A Chrome extension which replaces all images on all pages to Jair Messias Bolsonaro.
+A Chrome and Firefox extension which replaces all images on all pages to Jair Messias Bolsonaro.
 
-<!-- ![Jair Messias Bolsonaro](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Official_portrait_of_Jair_Bolsonaro_%282023%29.jpg/220px-Official_portrait_of_Jair_Bolsonaro_%282023%29.jpg) -->
+![Jair Messias Bolsonaro](https://lh3.googleusercontent.com/spainO4oOU4OZXyP-6w0fSEjqPCYqjW7e5i-tY4wDV-_CI5ZP-jUjTj2V8AZURSPFhQMuLZKOmWJ7uMwoPpXfGJv1g=s1280-w1280-h800)
 
 
 ## Link
 
-Soon
-<!-- * Chrome: https://chrome.google.com/webstore/detail/nbolsonaro/hnbmfljfohghaepamnfokgggaejlmfol?hl=en -->
+* Chrome: https://chromewebstore.google.com/detail/nbolsonaro/jcfnjghllnbbhidodeakjmodgpefhben
+* Firefox: https://addons.mozilla.org/pt-BR/firefox/addon/nbolsonaro/
